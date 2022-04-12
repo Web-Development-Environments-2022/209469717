@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to the top</button>
 
         <div id="menu" class="topnav">
             <link rel="stylesheet" href="style.css">
@@ -33,87 +33,95 @@
         </section>
 
         <section id="photo_sec" class="section">
+                   
+          
             <!-- Container for the image gallery -->
-<div class="container">
+          <div class="container" style="width:75%" >
+            <h2 style="text-align:center">My photo gallery</h2>
+              <!-- Full-width images with number text -->
+              <div class="mySlides">
+                <div class="numbertext"></div>            
+                  <script> plusSlides(1) </script>
+                  <img src="photos/1.jpg" style="width:50%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext"></div>
+                  <img src="photos/2.jpg" style="width:50%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext"></div>
+                  <img src="photos/3.jpg" style="width:50%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext"></div>
+                  <img src="photos/4.jpg" style="width:50%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext"></div>
+                  <img src="photos/5.jpg" style="width:50%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext"></div>
+                  <img src="photos/6.jpg" style="width:50%">
+              </div>
+            
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-    <!-- Full-width images with number text -->
-    <div class="mySlides">
-      <div class="numbertext"></div>
-        <img src="photos/1.jpg" style="width:40%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext"></div>
-        <img src="photos/2.jpg" style="width:40%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext"></div>
-        <img src="photos/3.jpg" style="width:40%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext"></div>
-        <img src="photos/4.jpg" style="width:40%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext"></div>
-        <img src="photos/5.jpg" style="width:40%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext"></div>
-        <img src="photos/6.jpg" style="width:40%">
-    </div>
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+              <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
 
-     <!-- Image text -->
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
-
-  <!-- Thumbnail images -->
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="photos/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="New glasses flex">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="photos/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Out for a date, feeling cute">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="photos/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Telling my wife we're getting a divorce">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="photos/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Best play of the year">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="photos/5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Pepe laugh">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="photos/6.jpg" style="width:100%" onclick="currentSlide(6)" alt="at the beach with the bitches">
-    </div>
-  </div>
-</div>
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="photos/1.jpg" style="width:100%" onclick="currentSlide(1)" >
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="photos/2.jpg" style="width:100%" onclick="currentSlide(2)" >
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="photos/3.jpg" style="width:100%" onclick="currentSlide(3)">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="photos/4.jpg" style="width:100%" onclick="currentSlide(4)">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="photos/5.jpg" style="width:100%" onclick="currentSlide(5)">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="photos/6.jpg" style="width:100%" onclick="currentSlide(6)">
+              </div>
+            </div>
+          </div>
 
   </div>
         </section>
 
         <section id="playlist_sec" class="section">          
             <h2>My Playlist</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/uAE6Il6OTcs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uAE6Il6OTcs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
         </section>
 
         <section id="like_sec" class="section">
-            <h2>Like</h2>
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" nonce="s5RdcXr3"></script>
+
+            <div class="fb-like" data-href="https://web-development-environments-2022.github.io/assignment1-elmatro/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
         </section>
 
         <section id="QR_sec" class="section">
             <h2>QR Code</h2>
+            <img src="photos/QR.png" alt="website QR">
         </section>
 
         <section id="Q&A_sec" class="section">
