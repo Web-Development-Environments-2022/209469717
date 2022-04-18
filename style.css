@@ -68,6 +68,7 @@ section {
   
 #myBtn:hover {
 background-color: #555; /* Add a dark-grey background on hover */
+box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(7, 1, 2, 0.5), .125rem .125rem 1rem rgba(2, 4, 83, 0.5);
 }
 
 
@@ -151,3 +152,156 @@ background-color: #555; /* Add a dark-grey background on hover */
   opacity: 1;
 }
   
+
+
+.emoji-drawer {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  width: 100px;
+
+  margin-bottom: 32px;
+  transition: opacity 0.2s;
+}
+
+.hidden {
+opacity: 0;
+}
+
+.emoji {
+  text-align: center;
+  font-size: 24px;
+  padding: 8px;
+}
+
+.emoji:hover {
+  cursor: pointer;
+}
+
+
+.email-form {
+  width: 70%;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: rgb(236, 236, 236);
+  box-shadow: 0px 0px 20px #00000010;
+  position: relative; 
+  left: -400px;
+}
+
+.email-title{
+  font-family: Garamond, serif;
+  font-size: 25px;  
+  text-align: center;
+}
+
+.QR{
+  position: relative; 
+  left: 400px;
+}
+
+.like{
+  position: relative; 
+  left: 800px;
+}
+
+.facebook-title{
+  font-size: 14px; 
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.button-submit {
+  background-color: #280ebb;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-submit:hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(7, 1, 2, 0.5), .125rem .125rem 1rem rgba(2, 4, 83, 0.5);
+}
+
+
+
+
+.button-emoji {
+  background: linear-gradient(to bottom right, #474aef, #e630cd);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+} 
+
+.button-emoji:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(172, 71, 239, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.contact-email{
+  width: 100%;
+  height: 20px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.contact-message{
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.contact-text{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+}
+
+.contact_sec{
+  background-color: #e5e5f7;
+}
+
