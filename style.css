@@ -1,6 +1,7 @@
 
 html{
     scroll-behavior: smooth;
+    background-color: #e5e9ec;
 }
 
 #menu
@@ -44,7 +45,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #cbd3fc;
+
 }
 
 #opening_sec {
@@ -76,23 +77,19 @@ box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(7, 1, 2, 
   box-sizing: border-box;
 }
 
-/* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
 }
 
-/* Hide the images by default */
 .mySlides {
   margin-left: 35%;
   display: none;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -101,7 +98,7 @@ box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(7, 1, 2, 
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: rgb(26, 1, 29);
   font-weight: bold;
   font-size: 40px;
   border-radius: 0 3px 3px 0;
@@ -109,20 +106,17 @@ box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(7, 1, 2, 
   -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(215, 206, 218, 0.8);
 }
 
 
-/* Container for image text */
 .caption-container {
   text-align: center;
   background-color: #222;
@@ -136,13 +130,11 @@ box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(7, 1, 2, 
   clear: both;
 }
 
-/* Six columns side by side */
 .column {
   float: left;
   width: 16.66%;
 }
 
-/* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.2;
 }
@@ -301,7 +293,10 @@ opacity: 0;
   font-size: 25px;
 }
 
-.contact_sec{
-  background-color: #e5e5f7;
+
+.playlist_sec{
+  font-family: Garamond, serif;
+  font-size: 25px;  
+  text-align: center;  
 }
 
