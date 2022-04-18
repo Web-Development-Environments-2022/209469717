@@ -48,3 +48,19 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+function addEmoji(emoji) {
+  let inputEle = document.getElementById('input');
+  
+  input.value += emoji;
+}
+
+function toggleEmojiDrawer() {
+  let drawer = document.getElementById('drawer');
+  
+  if (drawer.classList.contains('hidden')) {
+    drawer.classList.remove('hidden');
+  } else {
+    drawer.classList.add('hidden');
+  }
+}
