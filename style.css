@@ -1,7 +1,7 @@
 
 html{
     scroll-behavior: smooth;
-    background-color: #e5e9ec;
+    background-color: #c9c9df;
 }
 
 #menu
@@ -23,6 +23,8 @@ html{
     font-size: 17px;
     cursor: pointer;
     z-index: 100;
+    border-radius: 100px;
+    
 }
 
 
@@ -49,8 +51,32 @@ section {
 }
 
 #opening_sec {
-    background-color: #67cb6c;
+  background-color: #e5e5f7;
 }
+
+#QA_sec {
+  background-color: #c8c8e7;
+}
+
+#about_sec {
+  background-color: #d7d7f1;
+}
+
+
+#photo_sec {
+  background-color: #cbcbda;
+}
+
+#playlist_sec {
+  background-color: #c5c5e0;
+}
+
+#contact_sec {
+  background-color: #e7e7f1;
+}
+
+
+
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -198,7 +224,13 @@ opacity: 0;
 
 .like{
   position: relative; 
-  left: 800px;
+  left: 550px;
+  width: 175%;
+  background-color: rgb(236, 236, 236);
+  box-shadow: 0px 0px 20px #00000010;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 16px;
 }
 
 .facebook-title{
