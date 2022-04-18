@@ -8,8 +8,6 @@
             <a href="#about_sec">About me</a>
             <a href="#photo_sec">My Photos</a>
             <a href="#playlist_sec">My Playlist</a>
-            <a href="#like_sec">Like</a>
-            <a href="#QR_sec">QR Code</a>
             <a href="#Q&A_sec">Q&A</a>
             <a href="#contact_sec">Contact me</a>
           </div>
@@ -102,35 +100,122 @@
               </div>
             </div>
           </div>
-
-  </div>
+          
+        </div>
+        
         </section>
-
-        <section id="playlist_sec" class="section">          
-            <h2>My Playlist</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="playlist_sec" class="section">    
+          
+          <body>  
+                <div id="header">
+                  <h2>My Playlist</h2>  
+                </div> 
+              
+                <div id="content">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/uAE6Il6OTcs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>  
+                </div> 
+            </body>
             
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/uAE6Il6OTcs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
-        </section>
+            
 
-        <section id="like_sec" class="section">
-            <div id="fb-root"></div>
-            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" nonce="s5RdcXr3"></script>
-
-            <div class="fb-like" data-href="https://web-development-environments-2022.github.io/assignment1-elmatro/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
-        </section>
-
-        <section id="QR_sec" class="section">
-            <h2>QR Code</h2>
-            <img src="photos/QR.png" alt="website QR">
-        </section>
-
+          
         <section id="Q&A_sec" class="section">
             <h2>Q&A</h2>
         </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
-        <section id="contact_sec" class="section">
-            <h2>Contact Me</h2>
+        <section id="contact_sec" class="contact_sec">
+        
+          <body>  
+                <div id="header" class = "email-title">  
+                   <h2>Contact me<br></h2>
+                   <br>
+                   <br>
+                   <br>
+                   <br>
+                </div> 
+               
+                <div id="content"  style="width: 100%; overflow: hidden;">  
+                    
+                <div style="width: 600px; float: left;" class = "email-form">
+                  <form action="mailto:alon.sadot03@gmail.com" method="post" enctype="text/plain" id="contact_mail">
+                    <label class="contact-text" for="email"> E-mail: </label>                  
+                    <br>
+                    <input class="contact-email" type="text" name="Email recieved from">
+                    <br>
+                    <label class="contact-text" for="message"> Message: </label>
+                    <br>
+                    <textarea class="contact-message" name="massage" id="input" cols="30" rows="10"></textarea>
+                    <br>
+                    
+                    <input class="button-submit" type="submit" value="Send">
+                    <input class="button-submit" type="reset" value="Reset">
+                  </form>
+                  <br>
+
+                  <div class="like">
+                    <div id="fb-root" class="facebook-title">
+                      <img src="photos/facebook.png" alt="facebook" style="width:30%"> 
+                      Enjoyed the website? leave a like!
+                    </div>
+                    
+                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" nonce="s5RdcXr3"></script>
+        
+                    <div class="fb-like" data-href="https://web-development-environments-2022.github.io/assignment1-elmatro/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+                    
+                  </div>               
+                    <button class="button-emoji" onclick="toggleEmojiDrawer()" >Emojis</button>
+                  
+                    <div id="drawer" class="emoji-drawer hidden"> 
+                      <div class="emoji" onclick="addEmoji(this.innerHTML)">&#x1F609</div>
+                      <div class="emoji" onclick="addEmoji(this.innerHTML)">😃</div>
+                      <div class="emoji" onclick="addEmoji(this.innerHTML)">😄</div>
+                      <div class="emoji" onclick="addEmoji(this.innerHTML)">😁</div>
+                      <div class="emoji" onclick="addEmoji(this.innerHTML)">😆</div>
+                    </div>
+                </div>
+                
+                <div style="margin-left: 620px;">  
+                  <body>  
+                        <div id="header" class="QR">  
+                          <h2>QR Code</h2>
+                          <br>
+                          <img src="photos/QR.png" alt="website QR" >        
+                        </div> 
+                    </body>
+                </div>
+
+
+                </div> 
+            </body>
+            
+
         </section>
+        <br>
+        <br>
+        <br>
             
         <script type="text/javascript">
         $(function(){
@@ -146,4 +231,7 @@
             });​
             </script>
     </body>
+
+    
 </html>
+
