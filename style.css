@@ -7,10 +7,11 @@ html{
 #menu
 {
 	position: fixed;
+  z-index:99999;
 }   
 .toolbar {
     background-color: rgb(74, 82, 174);
-    overflow: hidden;
+    overflow:visible;
 }
 
 
